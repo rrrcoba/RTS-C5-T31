@@ -1,0 +1,40 @@
+.calculator-grid {
+    border-width: 1px, solid black;
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    width: 6.35%;
+    font-size: 2rem;
+    border: 1px, solid #FFFFFF;
+}
+
+.calculator-grid>button:hover {
+    background-color: #a9a9a9;
+}
+
+.span-two:hover {
+    background-color: #a9a9a9;
+}
+
+.span-two {
+    cursor: pointer;
+    width: 16.35%;
+    height: 10%;
+    color: #adf802;
+    font-size: 2rem;
+    background-color: rgba(139, 0, 139, 0.8);
+}
+
+.equal {
+    color: #adf802;
+    background-color: rgba(139, 0, 139, 0.8);
+}
+
+.result {
+    width: 20px;
+}
+
+.output {
+    width: 30%;
+}
