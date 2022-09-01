@@ -27,10 +27,26 @@ function escapeHTML() {
     str = document.getElementById("html").value;
     const charsToEncode = /[&"<>]/g;
     const encodeTo = {
-      "&": '&amp;',
-      "\"": '&quot;',
-      "<": '&lt;',
-      ">": '&gt;',
+        "&": '&amp;',
+        "\"": '&quot;',
+        "<": '&lt;',
+        ">": '&gt;',
     }
     alert(str.replace(charsToEncode, char => encodeTo[char]));
+}
+
+function check3() {
+    const regex = /^[A-z]+\s[A-z]+$/;
+    var name = document.getElementById("name").value;
+    if (regex.test(name)) {
+        let revertedName = name.split(" ").reverse().join();
+        alert(revertedName);
+    } else {
+        alert("Name not valid.");
+    }
+}
+
+function check4() {
+    str = document.getElementById("deleteHTML").value;
+    alert(str.replace(/<[^>]+>/g, ''));
 }
