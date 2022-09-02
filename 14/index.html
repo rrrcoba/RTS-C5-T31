@@ -11,37 +11,37 @@
 
 <body>
     <div id="output">
-        <input id = "result" type ="text">
+        <input id="result" type="text">
     </div>
     <br>
     <div class="calculator-grid">
         <div class="delRes">
-            <button class="span-two">AC</button>
+            <button class="span-two" onclick="AC()">AC</button>
             <button class="span-two" onclick="del()">DEL</button>
         </div>
         <button onclick="number(7)" id="number">7</button>
         <button onclick="number(8)" id="number">8</button>
         <button onclick="number(9)" id="number">9</button>
-        <button>÷</button>
-        <button>Raíz</button>
+        <button onclick="divide()">÷</button>
+        <button onclick="sqrt()">Raíz</button>
         <br>
         <button onclick="number(4)" id="number">4</button>
         <button onclick="number(5)" id="number">5</button>
         <button onclick="number(6)" id="number">6</button>
-        <button>*</button>
-        <button>%</button>
+        <button onclick="product()">*</button>
+        <button onclick="percentage()">%</button>
         <br>
         <button onclick="number(1)" id="number">1</button>
         <button onclick="number(2)" id="number">2</button>
         <button onclick="number(3)" id="number">3</button>
-        <button>-</button>
-        <button>1/x</button>
+        <button onclick="minus()">-</button>
+        <button onclick="reverse()">1/x</button>
         <br>
         <button onclick="number(0)" class="number">0</button>
-        <button>+/-</button>
-        <button>.</button>
-        <button>+</button>
-        <button id="equal">=</button>
+        <button onclick="signChange()">+/-</button>
+        <button onclick="number('.')">.</button>
+        <button onclick="plus()">+</button>
+        <button id="equal" onclick="equal()">=</button>
     </div>
     <script src="js/code.js"></script>
 </body>
