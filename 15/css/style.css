@@ -1,0 +1,9 @@
+#littleImg {
+    float: left;
+}
+
+#bigImgDiv {
+    float: right;
+    height: 310px;
+    width: 410px;
+}
